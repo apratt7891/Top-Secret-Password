@@ -30,12 +30,6 @@ function generatePassword() {
   var confirmSpecialCharacter = confirm('Please confirm your password will contain atleast one special character');
   var confirmLowerCaseLetters = confirm('Please confirm your password will contain lowercase letters');
   var confirmUpperCaseLetters = confirm('Please confirm your password will contain uppercase letters');
-
-
-
-
-
-
 }
 
 
