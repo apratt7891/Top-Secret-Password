@@ -25,13 +25,19 @@ function generatePassword() {
     else {
       alert('Please contine');
   }
-
+//confirm questions for numbers, special characters and upper/lower case letters//
   var confirmNumber = confirm('Please confirm your password will contain a number');
   var confirmSpecialCharacter = confirm('Please confirm your password will contain atleast one special character');
   var confirmLowerCaseLetters = confirm('Please confirm your password will contain lowercase letters');
   var confirmUpperCaseLetters = confirm('Please confirm your password will contain uppercase letters');
 }
 
+var r = "";
+
+
+for (var i = 0; i < passwordLength; i++) {
+  var r = Math.floor(Math.random() * )
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
