@@ -5,3 +5,4 @@ Using only Javascript, this random password generator will create a password bas
 
 # Website
 https://apratt7891.github.io/top-secret-password/
+
