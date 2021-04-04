@@ -1,8 +1,8 @@
 
 
 // variables //
-var number = "0123456789";
-var specialCharacter = "!@$#%&*";
+var number = ['0','1','2','3','4','5','6','7','8','9'];
+var specialCharacter = ['!','@','#','$','%','^','&','*'];
 var lowerCaseLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var upperCaseLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
@@ -18,6 +18,7 @@ function generatePassword() {
   var password = alert('Your password must be a mixture of both uppercase and lowercase letters');
   var password = alert('Your password must contain at least one special character, eg., !@#?');
   var passwordLength = prompt ('How many characters will your password contain?');
+  
 
   if (passwordLength < 8) {
     alert('Password must contain at least 8 characters');
@@ -25,23 +26,37 @@ function generatePassword() {
     alert('Password cannot contain more than 128 characters');
   }
     else {
-      alert('Please contine');
+    alert('Please contine');
   }
 //confirm questions for numbers, special characters and upper/lower case letters//
   var confirmNumber = confirm('Please confirm your password will contain a number');
   var confirmSpecialCharacter = confirm('Please confirm your password will contain atleast one special character');
   var confirmLowerCaseLetters = confirm('Please confirm your password will contain lowercase letters');
   var confirmUpperCaseLetters = confirm('Please confirm your password will contain uppercase letters');
-}
 
-var r = "";
+  var results = [];
 
+//join multiple pieces of information from the above arrays//
+ if (confirmNumber) {
+  results = results.concat(number)
+ }
+ if (confirmSpecialCharacter) {
+  results = results.concat(specialCharacter)
+ }
+ if (confirmLowerCaseLetters) {
+  results = results.concat(lowerCaseLetters)
+ }
+ if (confirmUpperCaseLetters) {
+  results = results.concat(upperCaseLetters)
+ }
+//Create loop that will select criteria from the above arrays that will be randomly chosen in the password//
+var criteria = [];
 
 for (var i = 0; i < passwordLength; i++) {
-  r += 
-  
-
+  criteria = criteria + results[Math.floor(Math.random() * results.length)];
   }
+return criteria;
+
 }
 
 // Get references to the #generate element
