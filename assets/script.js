@@ -1,3 +1,5 @@
+
+var possibleChars = [];
 // variables //
 var number = ['0','1','2','3','4','5','6','7','8','9'];
 var specialCharacter = ['!','@','$','%','&','*'];
@@ -36,7 +38,7 @@ var r = "";
 
 
 for (var i = 0; i < passwordLength; i++) {
-  var r = Math.floor(Math.random() * )
+  var r = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 }
 
 // Get references to the #generate element
