@@ -1,17 +1,17 @@
 
-var possibleChars = [];
+
 // variables //
-var number = ['0','1','2','3','4','5','6','7','8','9'];
-var specialCharacter = ['!','@','$','%','&','*'];
+var number = "0123456789";
+var specialCharacter = "!@$#%&*";
 var lowerCaseLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-var upperCaseLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var upperCaseLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
 var passwordLength = "";
 var confirmNumber;
 var confirmSpecialCharacter;
 var confirmLowerCaseLetters;
 var confirmUpperCaseLetters;
-
+//function used to generate prompts for password criteria//
 function generatePassword() {
   var password = alert("Please create a secure password");
   var password = alert('Your password needs to contain at least 8 characters');
@@ -38,7 +38,10 @@ var r = "";
 
 
 for (var i = 0; i < passwordLength; i++) {
-  var r = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+  r += 
+  
+
+  }
 }
 
 // Get references to the #generate element
